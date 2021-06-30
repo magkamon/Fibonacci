@@ -28,7 +28,7 @@ public class FibonacciTest {
         //given
         int zeroElement = 0;
         //when
-        int actualValue = countFibonacciSequence(zeroElement);
+        long actualValue = countFibonacciSequence(zeroElement);
         //then
         assertEquals(actualValue, 0);
     }
@@ -38,7 +38,7 @@ public class FibonacciTest {
         //given
         int firstElement = 1;
         //when
-        int actualValue = countFibonacciSequence(firstElement);
+        long actualValue = countFibonacciSequence(firstElement);
         //then
         assertEquals(actualValue, 1);
     }
@@ -57,9 +57,9 @@ public class FibonacciTest {
     @Test(dataProvider = "elementsOfSequence")
     public void shouldReturnSumOfTwoPreviousElements(int elementNumber) {
         //given & when
-        int actualValue = countFibonacciSequence(elementNumber);
-        int firstPrecedingValue = countFibonacciSequence(elementNumber - 1);
-        int secondPrecedingValue = countFibonacciSequence(elementNumber - 2);
+        long actualValue = countFibonacciSequence(elementNumber);
+        long firstPrecedingValue = countFibonacciSequence(elementNumber - 1);
+        long secondPrecedingValue = countFibonacciSequence(elementNumber - 2);
         //then
         assertEquals(actualValue, firstPrecedingValue + secondPrecedingValue);
     }
