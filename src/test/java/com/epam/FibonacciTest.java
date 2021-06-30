@@ -31,5 +31,15 @@ public class FibonacciTest {
         assertEquals(actualValue,0);
     }
 
+    @Test
+    public void shouldReturnOneForFirstElement(){
+        //given
+        int firstElement = 1;
+        //when
+        int actualValue = countFibonacciSequence(firstElement);
+        //then
+        assertEquals(actualValue, 1);
+    }
+
 
 }
