@@ -21,5 +21,15 @@ public class FibonacciTest {
         assertNotNull(exception);
     }
 
+    @Test
+    public void shouldReturnZeroForZeroElement(){
+        //given
+        int zeroElement = 0;
+        //when
+        int actualValue = countFibonacciSequence(zeroElement);
+        //then
+        assertEquals(actualValue,0);
+    }
+
 
 }

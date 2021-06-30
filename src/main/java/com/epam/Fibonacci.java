@@ -6,7 +6,7 @@ public class Fibonacci {
         if(elementNumber < 0){
             throw new IllegalArgumentException();
         }
-        return 0;
+        return -1;
     }
 
 
