@@ -49,7 +49,8 @@ public class FibonacciTest {
                 {2},
                 {10},
                 {15},
-                {20}
+                {20},
+                {50}
         };
     }
 
